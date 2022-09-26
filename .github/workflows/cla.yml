@@ -24,9 +24,15 @@ jobs:
       with:
         java-version: 1.8
 
-    - name: grant execute permission for gradlew
+    - name: grant execute permission for gradle
       uses: chmod +x gradflew
-    
+      
+    - name: build with gradle
+      run: ./gradle build
+      with:
+        gradle-version: 7.6
+         
+
   publish:
 
       needs: build
