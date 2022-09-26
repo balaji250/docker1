@@ -26,13 +26,7 @@ jobs:
 
     - name: grant execute permission for gradlew
       uses: chmod +x gradflew
-      
-    - name: build with gradle
-      run: ./gradlew build
-      with:
-        gradle-version: 7.6
-         
-
+    
   publish:
 
       needs: build
