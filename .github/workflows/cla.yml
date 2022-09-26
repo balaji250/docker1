@@ -29,6 +29,9 @@ jobs:
       
     - name: build with gradle
       run: ./gradlew build
+      with:
+        gradle-version: 7.6
+         
 
   publish:
 
